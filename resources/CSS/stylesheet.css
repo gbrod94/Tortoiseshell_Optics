@@ -1,0 +1,261 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, Sans-serif;}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+}
+
+nav {
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  }
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+.menu2 {
+  display: none;
+}
+
+.menu2 li {
+  list-style: none;
+}
+
+.menu ul,.menu2 ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.menu li,.menu2 li {
+  margin-right: 2rem;
+}
+
+nav.container {
+  position: relative;
+  top: 1rem;
+}
+
+.main-banner {
+  background-color: white;
+  position: relative;
+  right: -2rem;
+  top: 10rem;
+  padding: 1.5rem 5rem;
+  }
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  text-align: center;
+  }
+
+header .flex {
+  justify-content: flex-end;
+}
+
+.flex {
+  display: flex;
+}
+
+.service {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 5rem;
+  height: 8rem;
+}
+
+.service img {
+  max-width: 5rem;
+}
+
+#paper {
+  max-width: 3.5rem;
+}
+
+.infographic {
+  display: flex;
+  justify-content: center;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.info {
+  max-width: 30%;
+  margin-right: 5%;
+}
+.title {
+  background-color: cadetblue;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+  max-width: 10rem;
+}
+
+.info p {
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 4rem;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+
+@media only screen and (max-width:1024px) {
+  .container {
+    max-width: 100%;
+  }
+
+  nav.container {
+    position: relative;
+    top: 0;
+  }
+
+  header {
+    height: 22rem;
+  }
+
+  .main-banner {
+    position: relative;
+    right: 2rem;
+    top: 5rem;
+    padding: 0.75rem 4rem;
+    }
+
+  h1 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width:700px) {
+  .container {
+    max-width: 100%;
+  }
+
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  nav.container {
+    position: relative;
+    top: 0;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .menu ul {
+    display: none;
+  }
+
+  .menu2 {
+    display: block;
+  }
+
+  .main-banner {
+    width: 100%;
+    padding: 0 1rem;
+    position: relative;
+    top: 9rem;
+    right: 0;
+   }
+
+  h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .infographic {
+    flex-direction: column;
+    align-items: center;
+    margin: 3.77rem auto;
+  }
+
+  .service {
+    margin: 0 auto 1.54rem auto;
+    justify-content: space-around;
+  }
+
+  .service span {
+    font-size: 0.77rem;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info {
+    max-width: 100%;
+    margin: 1rem auto 4rem auto;
+  }
+
+  .title {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .info p {
+    font-size: 0.77rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    text-align: left;
+  }
+
+  footer span {
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
+  }
+}
